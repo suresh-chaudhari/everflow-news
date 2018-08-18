@@ -1,4 +1,9 @@
 
+Everflow-News Service
+=============================
+
+``` Java
+
 Following things are implemented: 	
     a. Connect to an API to retrieve a news list
     b. Manage the news in a database
@@ -204,3 +209,6 @@ Response For :
     "news_id": 20
   }
 ]
+
+
+```
