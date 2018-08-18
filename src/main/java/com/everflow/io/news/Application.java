@@ -47,7 +47,7 @@ public class Application implements CommandLineRunner {
         log.info("\n\n");
         log.info("****************************************************\n\n\n");
 
-//        log.info(objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(newsListResponse));
+        log.info(objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(newsListResponse));
 
     }
 }

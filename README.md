@@ -10,7 +10,11 @@ Following things are implemented:
     c. Publish the solution in a Github repo
     d. (Optional) Use Redis to introduce a caching layer
 
-Note: Redis caching layer is implemented for expose endpoint for /v1/everflow/news and /v1/everflow/news/{id}	
+Note: Redis caching layer is implemented for expose endpoint for /v1/everflow/news and /v1/everflow/news/{id}
+      Redis will keep data in Caching for 5 minutes after that it will make query to again database and put it in cache
+
+      To update Redis Cache time , you can update in application.yml file with ;time-to-live: 20000' field.
+
 
 
 Run project:
