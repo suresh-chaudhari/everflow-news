@@ -1,0 +1,22 @@
+version: "2"
+
+services:
+
+  redis:
+    image: redis
+    container_name: redis
+    hostname: dockermachine
+    ports:
+      - 6379:6379
+
+  mysql:
+    image: mysql:5.7
+    container_name: mysql
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: admin@123
+      MYSQL_DATABASE: everflow
+#      MYSQL_USER: root
+#      MYSQL_PASSWORD: admin@123
